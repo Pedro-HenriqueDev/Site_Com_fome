@@ -2,7 +2,7 @@
 
 Link: https://pedro-henriquedev.github.io/Site_Com_fome/
 
-<h2>Site estático : Com Fome!<h2/>
+Site estático : Com Fome!<h2/>
 
 <h2>Site totalmente fictício<h2/>
   
