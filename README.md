@@ -16,4 +16,10 @@ Site totalmente fictício
  - Menu flexível
 
  ### Conteúdo
-  Na parte onde se 
+  A parte onde se encontra o conteúdo principal ,apesar de parecer ter sido concluído ainda está em dessenvolvimento, onde será aplicada uma lógica com JavaScript...🚧
+  
+ ### Footer 
+ 
+  Footer bem  básico somente para trazer mais realidade ao WebSite
+  
+  🚧em andamento...🚧
