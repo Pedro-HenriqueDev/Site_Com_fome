@@ -10,4 +10,4 @@ Site totalmente fictício
   
  ### Menu
  
- --- Menu animado e responsivo feito com javaScript
+ - Menu animado e responsivo feito com javaScript
