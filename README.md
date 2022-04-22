@@ -10,4 +10,10 @@ Site totalmente fictício
   
  ### Menu
  
- - Menu animado e responsivo feito com javaScript
+ - Menu animado 
+ - Menu mobile, feito com JavaScript (puro)
+ - Logo fictícia
+ - Menu flexível
+
+ ### Conteúdo
+  Na parte onde se 
