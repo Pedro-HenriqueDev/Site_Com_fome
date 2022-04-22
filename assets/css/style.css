@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Josefin+Sans:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0%;
+    border: 0%;
+    overflow-x: hidden;
+}
+#container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 10vh 1fr 300px;
+    grid-template-areas: "header header"
+                        "main main"
+                        "footer footer";
+}
+header {
+    background-color: #c92d2d;
+    grid-area: header;
+    
+}
+main {
+    background-color: #fff;
+    grid-area: main;
+}
+
+footer {
+    background-color: #534340;
+    grid-area: footer;
+}
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+/* BARRA DE NAVEGAÇÃO */
+nav {
+    font-size: 18px;
+    font-family: 'Josefin Sans', sans-serif;
+    transform: translateY(-60px);
+    animation: descer 1s forwards;
+    background-color: rgba(54, 34, 34, 0.9);
+}
+/* Animação Menu */
+@keyframes descer {
+    to  {
+        transform: translateY(0px);
+    }
+}
+@keyframes logo-lado {
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes lado-menu {
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+/* Fim das animações menu */
+
+.logo {
+    margin-left: 10px;
+    align-self: center;
+    color: #fff;
+    font-family: 'Dancing Script', cursive;
+    border-right: #FFF 3px solid;
+    padding: 5px;
+    border-radius: 2px;
+    animation-timing-function: ease-in-out;
+    transform: translateY(-50px);
+    animation: logo-lado 1s forwards;
+    opacity: 0;
+}
+.logo div{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.logo span {
+    font-size: 30px;
+}
+.cor_diferente {
+    color: #c92d2d;
+}
+.navegacao {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+
+
+    transform: translateY(-50px);
+    animation: lado-menu 1s forwards; 
+    animation-timing-function: ease-in-out;
+    opacity: 0;
+}
+
+.ul-nav{
+    list-style-type: none;
+    display: flex;
+    margin-right: 10px;
+    margin-top: 30px;
+}
+.ul-nav li {
+    margin-right: 20px;
+    
+}
+.ul-nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+.ul-nav li:hover {
+    border-bottom: #fff solid 2px;
+    border-radius: 2px;
+    margin-top: -2px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+.div_btn {
+    align-self: center;
+    margin-right: 10px;
+}
+.div_estabilizar {
+    margin-top: 20px;
+}
+.div_btn button{
+    padding: 10px 15px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px #fff solid;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+.div_btn button:hover {
+    background-color: #fff;
+    color: #362222;
+    cursor: pointer;
+}
+.closebtn {
+    display: none;
+}
+.nav-button {
+    display: none;
+    background-color: transparent;
+    border-radius: 10%;
+   
+}
+@media (max-width: 999px) {
+    
+}
+
+/* MAIN */
+
+/* sessão 1 */
+.sessao1 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 300px;
+    justify-content: center;
+    background-color: #c92d2d;
+    padding-bottom: 400px;
+    border-bottom: #362222 solid 5px;
+}
+.key_anima {
+    animation-name: textos;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    transform: translateY(50px);
+}
+.sessao1 h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 5rem;
+    color: #FFF;
+    margin-top: 200px;
+    
+
+}
+.sessao1 h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+}
+@keyframes textos {
+    from {
+        opacity: 0;
+        
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+        
+    }
+}
+
+/* sessão 2 */
+.sessao2 {
+    display: flex;
+    justify-content: space-around;
+    
+    margin-top: -450px;
+    margin-bottom: 100px;
+}
+.base {
+    width: 250px;
+    height: 350px;
+    background-color: #534340;
+    border: #362222 5px solid;
+    border-radius: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.37);
+}
+.base:hover {
+    transform: scale(105%);
+    box-shadow: 10px 15px 10px 0px rgba(0, 0, 0, 0.39);
+}
+.div_img_base img {
+    width: 80px;
+}
+.h2_base {
+    color: #fff;
+    margin-top: 50px;
+}
+/* sessão 3 */
+.sessao3 {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.sessao3 h1 {
+    font-size: 48px;
+    text-align: center;
+    color: #c92d2d;
+}
+.sessao3 p {
+    font-size: 22px;
+}
+.sessao3 img {
+    width: 600px;
+    border-radius: 50%;
+    height: auto;
+}
+.div_opcoes {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.textos {
+    margin: 20px 40px;
+}
+/* footer */
+
+.container_footer {
+    margin-top: 30px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.div_footer ul{
+    list-style: none;
+}
+.div_footer ul li {
+    margin-bottom: 5px;
+    transition: all 0.3s;
+}
+.div_footer ul li a {
+    color: rgb(0, 0, 0);
+}
+.div_footer ul li:hover {
+    transform: translateX(-3px);
+}
+footer h4 {
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+
+/* REsponsividade */
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    /* Nav-bar responsiva */
+    .nav-button {
+        display: block;
+        margin: 6px;
+        
+    }
+    .nav-button img {
+        width: 40px;
+    }
+    .closebtn {
+        display: block;
+        margin: 10px;
+    }
+    .closebtn img {
+        width: 20px;
+    }
+    #MyNav {
+        width: 0%;
+        height: auto;
+        background-color: rgba(134, 134, 134, 0.384);
+        z-index: 9;
+        position: fixed;
+        right: 0%;
+        top: 0%;
+        overflow-x: hidden;
+        transition: all 0.5s;
+    }
+    .ul-nav{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    margin-top: 30px;
+    }
+    .navegacao {
+        flex-direction: column;
+    }
+    .ul-nav li {
+        margin-right: 20px;
+        
+    }
+    .ul-nav li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    .ul-nav li:hover {
+        border-bottom: #fff solid 2px;
+        border-radius: 2px;
+        margin-top: -2px;
+    }
+    /* Main */
+    .sessao1 h1 {
+        font-size: 4rem;
+    }
+    /* sessao2 */
+    .sessao2 {
+        flex-wrap: wrap;
+    }
+    .base {
+        width: 200px;
+        margin-bottom: 20px;
+    }
+
+  }
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 767.98px) {
+    /* Nav-bar responsiva */
+    .nav-button {
+        display: block;
+        margin: 6px;
+        
+    }
+    .nav-bar {
+        padding-bottom: 30px;
+    }
+    .nav-button img {
+        width: 40px;
+    }
+    .closebtn {
+        display: block;
+        margin: 10px;
+    }
+    .closebtn img {
+        width: 20px;
+    }
+    #MyNav {
+        width: 0%;
+        height: auto;
+        background-color: rgba(134, 134, 134, 0.384);
+        z-index: 9;
+        position: fixed;
+        right: 0%;
+        top: 0%;
+        overflow-x: hidden;
+        transition: all 0.5s;
+    }
+    .ul-nav{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    margin-top: 30px;
+    }
+    .navegacao {
+        flex-direction: column;
+    }
+    .ul-nav li {
+        margin-right: 20px;
+        
+    }
+    .ul-nav li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    .ul-nav li:hover {
+        border-bottom: #fff solid 2px;
+        border-radius: 2px;
+        margin-top: -2px;
+    }
+
+    /* Main */
+    .sessao1 h1 {
+        font-size: 4rem;
+        margin-top: 70px;
+    }
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+  }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+  }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+ }
