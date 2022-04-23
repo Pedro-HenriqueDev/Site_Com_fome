@@ -90,7 +90,7 @@ nav {
 .navegacao {
     display: flex;
     flex-direction: row;
-    padding-bottom: 10px;
+
 
 
     transform: translateY(-50px);
@@ -117,6 +117,10 @@ nav {
     border-bottom: #fff solid 2px;
     border-radius: 2px;
     margin-top: -2px;
+}
+.overlay {
+    display: flex;
+    align-self: center;
 }
 
 nav {
@@ -154,9 +158,7 @@ nav {
     border-radius: 10%;
    
 }
-@media (max-width: 999px) {
-    
-}
+
 
 /* MAIN */
 
@@ -166,7 +168,7 @@ nav {
     flex-direction: row;
     justify-content: center;
     background-color: #c92d2d;
-    border-bottom: #362222 solid 5px;
+    
     align-items: center;
     height: 100vh;
 }
@@ -200,38 +202,69 @@ nav {
 }
 
 /* sessão 2 */
-.sessao2 {
-    display: flex;
-    justify-content: space-around;
+    .container_section2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    div.card {
+        width: 400px;
+        height: 200px;
+        padding: 10px 10px;
+        margin: 20px 20px;
+        box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.555);
+        display: flex;
+        font-family:'Josefin Sans', sans-serif;
+    }
+    div.pizza {
+        border-left: 3px solid #c92d2d;
+        transition: all 0.4s;
+    }
+    div.pizza:hover {
+        background-color: #c92d2d;
+        box-shadow: 2px 2px 7px 0px rgba(0, 0, 0, 0.555);
+        transform: rotate(-3deg);
+    }
+    div.massa {
+        border-left: 3px solid #d1dd23;
+        transition: all 0.4s;
+    }
+    div.massa:hover {
+        background-color: #d1dd23;
+        box-shadow: 2px 2px 7px 0px rgba(0, 0, 0, 0.555);
+        transform: rotate(-3deg);
+    }
+    div.sushi {
+        border-left: 3px solid #969696;
+        transition: all 0.4s;
+    }
+    div.sushi:hover {
+        background-color: #969696;
+        box-shadow: 2px 2px 7px 0px rgba(0, 0, 0, 0.555);
+        transform: rotate(3deg);
+    }
+    div.salada {
+        border-left: 3px solid #00b909;
+        transition: all 0.4s;
+    }
+    div.salada:hover {
+        background-color: #00b909;
+        box-shadow: 2px 2px 7px 0px rgba(0, 0, 0, 0.555);
+        transform: rotate(3deg);
+    }
     
-
-    margin-bottom: 100px;
-}
-.base {
-    width: 250px;
-    height: 350px;
-    background-color: #534340;
-    border: #362222 5px solid;
-    border-radius: 20px;
-    font-family: 'Josefin Sans', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.5s;
-    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.37);
-}
-.base:hover {
-    transform: scale(105%);
-    box-shadow: 10px 15px 10px 0px rgba(0, 0, 0, 0.39);
-}
-.div_img_base img {
-    width: 80px;
-}
-.h2_base {
-    color: #fff;
-    margin-top: 50px;
-}
+    .card h2 {
+        font-size: 1.5rem;
+        margin-top: 20px;
+    }
+    .card h3 {
+        font-size: 1rem;
+    }
+    .card img {
+        width: 50px;
+        margin-left: 80%;
+    }
 /* sessão 3 */
 .sessao3 {
     display: flex;
@@ -253,16 +286,21 @@ nav {
     border-radius: 50%;
     height: auto;
 }
+.sessao3-img {
+    display: flex;
+    justify-content: center;
+}
 .conteudo {
     display: flex;
     flex-direction: column;
     margin-top: 40px;
     margin-bottom: 40px;
-    align-items: center;
 }
 .textos {
     margin: 20px 40px;
 }
+
+
 /* footer */
 
 .container_footer {
@@ -302,10 +340,10 @@ footer h4 {
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     /* Nav-bar responsiva */
-    .nav-button {
+    a.nav-button {
         display: block;
-        margin: 6px;
-        
+        margin-top: 50px;
+        margin-right: 30px
     }
     nav {
         height: 100%;
@@ -354,79 +392,32 @@ footer h4 {
         margin-top: -2px;
     }
     /* Main */
-    .sessao1 {
-        
-    }
+    
     .sessao1 h1 {
-        font-size: 4rem;
+        font-size: 3rem;
     }
     /* sessao2 */
     .sessao2 {
         flex-wrap: wrap;
     }
-    .base {
-        width: 200px;
-        margin-bottom: 20px;
+    div.card {
+        width: 330px;
+        height: auto;
     }
+    /* sessão 3 */ 
+    .sessao3 img {
+        width: 250px;
+        border-radius: 50%;
+        height: auto;
 
   }
-
+  .div_footer {
+    min-width: 100px;
+}
+}
 /* // Small devices (landscape phones, 576px and up) */
-@media (max-width: 767.98px) {
-    /* Nav-bar responsiva */
-    .nav-button {
-        display: block;
-        margin: 6px;
-        
-    }
-    .nav-bar {
-        padding-bottom: 30px;
-    }
-    .nav-button img {
-        width: 40px;
-    }
-    .closebtn {
-        display: block;
-        margin: 10px;
-    }
-    .closebtn img {
-        width: 20px;
-    }
-    #MyNav {
-        width: 0%;
-        height: auto;
-        background-color: rgba(0, 0, 0, 0.384);
-        z-index: 9;
-        position: fixed;
-        right: 0%;
-        top: 0%;
-        overflow-x: hidden;
-        transition: all 0.5s;
-    }
-    .ul-nav{
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    margin-right: 10px;
-    margin-top: 30px;
-    }
-    .navegacao {
-        flex-direction: column;
-    }
-    .ul-nav li {
-        margin-right: 20px;
-        
-    }
-    .ul-nav li a {
-        color: #fff;
-        text-decoration: none;
-    }
-    .ul-nav li:hover {
-        margin-top: -2px;
-    }
-    .div_estabilizar {
-        margin-left: 20px;
-    }
+@media (max-width: 767.98px) and (min-width: 575.98px) {
+    
 
     /* Main */
     .sessao1 {
@@ -434,19 +425,13 @@ footer h4 {
         align-items: center;
     }
     
-    .key_anima {
-
-    }
     .sessao1 h1 {
-        font-size: 4rem;
+        font-size: 3rem;
         
     }
     /* sessão 2 */
     .sessao2 {
         flex-wrap: wrap;
-    }
-    .base {
-        width: 200px;
     }
 
     /* sessão 3 */
@@ -465,7 +450,7 @@ footer h4 {
         font-size: 22px;
     }
     .sessao3 img {
-        width: 200px;
+        width: 400px;
         border-radius: 50%;
         height: auto;
     }
@@ -486,27 +471,13 @@ footer h4 {
 @media (min-width: 768px) and (max-width: 991.98px) {
      /* Main */
      .sessao1 {
-        
         align-items: center;
     }
     
-    .key_anima {
-        
-    }
     .sessao1 h1 {
         font-size: 4rem;
         
-    }
-    /* sessao2 */
-    .sessao2 {
-        flex-wrap: wrap;
-    }
-    .base {
-        width: 250px;
-        height: 350px;
-        margin-bottom: 20px;
-    }
-
+    }  
   }
 
 /* // Large devices (desktops, 992px and up) */
