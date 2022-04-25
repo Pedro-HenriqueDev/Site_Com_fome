@@ -12,7 +12,7 @@ body {
 #container {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 10vh 1fr 300px;
+    grid-template-rows: 70px 1fr 300px;
     grid-template-areas: "header header"
                         "main main"
                         "footer footer";
@@ -64,7 +64,10 @@ nav {
     }
 }
 /* Fim das animações menu */
-
+.nav-bar {
+    display: flex;
+    align-items: center;
+}
 .logo {
     margin-left: 10px;
     align-self: center;
@@ -90,6 +93,8 @@ nav {
 .navegacao {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    margin-top: 18px;
 
 
 
@@ -101,9 +106,8 @@ nav {
 
 .ul-nav{
     list-style-type: none;
-    display: flex;
-    margin-right: 10px;
-    margin-top: 30px;
+    display: flex;  
+    margin-top: 15px;  
 }
 .ul-nav li {
     margin-right: 20px;
@@ -118,22 +122,17 @@ nav {
     border-radius: 2px;
     margin-top: -2px;
 }
-.overlay {
-    display: flex;
-    align-self: center;
-}
-
 nav {
     display: flex;
     justify-content: space-between;
-    height: 100%;
+    align-items: center;
 }
 .div_btn {
     align-self: center;
     margin-right: 10px;
 }
 .div_estabilizar {
-    margin-top: 20px;
+
 }
 .div_btn button{
     padding: 10px 15px;
@@ -340,13 +339,15 @@ footer h4 {
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     /* Nav-bar responsiva */
+    #container {
+        grid-template-rows: 100px 1fr 300px;
+    }
     a.nav-button {
         display: block;
-        margin-top: 50px;
-        margin-right: 30px
+        margin: 10px;
     }
-    nav {
-        height: 100%;
+    a.nav-button:hover {
+        transform: scale(110%);
     }
     .nav-button img {
         width: 40px;
@@ -373,7 +374,7 @@ footer h4 {
     display: flex;
     flex-direction: column;
     margin-right: 10px;
-    margin-top: 30px;
+    margin-top: 50px;
     }
     .navegacao {
         flex-direction: column;
@@ -412,8 +413,11 @@ footer h4 {
 
   }
   .div_footer {
-    min-width: 100px;
+    min-width: 150px;
 }
+    .div_footer li a {
+        text-decoration: none;
+    }
 }
 /* // Small devices (landscape phones, 576px and up) */
 @media (max-width: 767.98px) and (min-width: 575.98px) {
